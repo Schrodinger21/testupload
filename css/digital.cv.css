@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  margin: 40px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.home a {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  padding: 20px 0;
+  border-bottom: 2px solid #d7d8da;
+  color: blue;
+  font-weight: bold;
+}
+.container-fluid {
+  border: 10px solid blue;
+}
+
+/* GOALS */
+.goals-list {
+  border-bottom: 10px solid blue;
+  border-right: 10px solid blue;
+}
+.goals {
+  display: flex;
+  gap: 40px;
+  padding-top: 10px;
+  border-bottom: 2px solid #e6e9eb;
+}
+.goal-item span {
+  font-size: 16px;
+}
+
+/* TEAM */
+.team-list {
+  border-bottom: 10px solid blue;
+  border-right: 10px solid blue;
+}
+.team-item {
+  display: flex;
+  gap: 30px;
+}
+.team-item span {
+  font-size: 16px;
+}
+
+/* TIME-LINE */
+.time-item {
+  display: flex;
+  gap: 40px;
+}
+.line-item {
+  border-bottom: 2px dotted #acacef;
+}
+.line-item span {
+  font-weight: bold;
+  font-size: 16px;
+}
+.time-icon {
+  margin-left: 10px;
+}
+
+/* SCOPES */
+.scopes-list {
+  border-right: 10px solid blue;
+}
+.scopes-item {
+  display: flex;
+  gap: 20px;
+}
+.scopes-item span {
+  font-size: 16px;
+}
+
+/* PRIMARY */
+.primary-list {
+  height: 100%;
+  border-right: 10px solid blue;
+}
+.primary-item {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .container-fluid {
+    margin-right: 0;
+  }
+  .goals-list {
+    border: none;
+    border-bottom: 10px solid blue;
+  }
+  .goals {
+    flex-wrap: wrap;
+  }
+  .team-list {
+    border: none;
+    border-bottom: 10px solid blue;
+  }
+  .team-item {
+    display: block;
+  }
+  .scopes-list {
+    border: none;
+    border-bottom: 10px solid blue;
+  }
+  .primary-list {
+    border: none;
+    border-bottom: 10px solid blue;
+  }
+  .primary-item {
+    display: block;
+  }
+  .time-item {
+    display: block;
+  }
+  .icon {
+    margin-left: 50%;
+    padding: 10px 0;
+  }
+  .time-icon {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scopes-item {
+    display: block;
+  }
+  .time-icon {
+    margin-left: 45%;
+  }
+}
